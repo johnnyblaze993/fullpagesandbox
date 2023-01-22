@@ -1,0 +1,110 @@
+@import './style.module.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    @include box-sizing;
+    color: $contrast-A;
+}
+
+.App {
+    text-align: center;
+
+
+    .section1 {
+        background-color: $color-1;
+        height: 100vh;
+        width: 100%;
+
+        justify-content: center;
+
+        color: $contrast-A;
+        @include flex-column;
+        @include flex-row-center;
+
+        @include small-only {
+            height: 100vh;
+        }
+
+        @include tablet {
+            height: 100vh;
+        }
+
+        @include desktop {
+            height: 100vh;
+        }
+    }
+
+    .section2 {
+        background-color: $color-2;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        color: $contrast-B;
+        @include flex-column;
+
+
+        @include small-only {
+            height: 100vh;
+        }
+
+        @include tablet {
+            height: 100vh;
+        }
+
+        @include desktop {
+            height: 100vh;
+        }
+    }
+
+    .section3 {
+        background-color: $color-3;
+        height: 100vh;
+        align-items: center;
+        color: $contrast-A;
+        @include flex-column;
+        justify-content: center;
+    }
+
+    .carouselContainer {
+        width: 80%;
+        height: auto;
+
+
+
+    }
+
+    .subsection {
+        width: 100%;
+        height: auto;
+        background-color: #f5f5f5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include flex-column;
+        @include flex-row-center;
+
+        // @include small-only {
+        //     height: 100vh;
+        // }
+
+        // @include tablet {
+        //     height: 100vh;
+        // }
+
+        // @include desktop {
+        //     height: 100vh;
+        // }
+    }
+}
