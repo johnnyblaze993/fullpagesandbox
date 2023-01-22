@@ -1,22 +1,18 @@
-import { Link } from "react-scroll";
+import Navbar from "./components/navbar/Navbar";
+import Chippy from "./components/chips/Chippy";
 
 import styles from "./App.module.scss";
-import Section1 from "./pages/section1/Section1";
-import Section2 from "./pages/section2/Section2";
-import Section3 from "./pages/section3/Section3";
+import Section1 from "./sections/section1/Section1";
+import Section2 from "./sections/section2/Section2";
+import Section3 from "./sections/section3/Section3";
+import Links from "./sections/links/Links";
 
 const App = () => {
   return (
     <div className={styles.App}>
-      <Link to="section1" smooth={true} duration={500}>
-        Go to Section 1
-      </Link>
-      <Link to="section2" smooth={true} duration={500}>
-        Go to Section 2
-      </Link>
-      <Link to="section3" smooth={true} duration={500}>
-        Go to Section 3
-      </Link>
+      <Navbar />
+
+      <Links />
 
       <Section1 />
       <Section2 />
