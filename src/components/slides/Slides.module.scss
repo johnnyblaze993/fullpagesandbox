@@ -2,8 +2,13 @@
 
 .container {
     @include fluid-type(1.5rem, 2.5rem, $breakpoint-small, $breakpoint-large);
-    @include flex-row-center;
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
     padding: $spacing-small;
     flex-wrap: wrap;
     gap: $spacing-small;
+
 }

@@ -1,5 +1,8 @@
 import { Element, scroller } from "react-scroll";
 import { Link } from "react-scroll";
+import Chippy from "../../components/chips/Chippy";
+
+import Quotes from "../../components/quotes/Quotes";
 
 import styles from "./Section1.module.scss";
 
@@ -7,7 +10,16 @@ const Section1 = () => {
   return (
     <>
       <Element name="section1" className={styles.section1}>
-        <h1>Section 1</h1>
+        <Quotes />
+        <h3>Know no limits</h3>
+        <Link
+          to="section2"
+          smooth={true}
+          duration={500}
+          className={styles.link}
+        >
+          <Chippy label="section2" />
+        </Link>
       </Element>
     </>
   );
