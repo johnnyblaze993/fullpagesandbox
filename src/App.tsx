@@ -1,5 +1,4 @@
 import Navbar from "./components/navbar/Navbar";
-import Chippy from "./components/chips/Chippy";
 
 import styles from "./App.module.scss";
 import Section1 from "./sections/section1/Section1";
@@ -19,34 +18,34 @@ const App = () => {
       <Section2 />
       <Section3 />
       <Slides
-        name="section4"
-        title="Section 4"
-        subtitle="Subtitle of the slide"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        to="section5"
-        label="section5"
+        name="Serene Mind"
+        title="Thats where Serene Mind comes in"
+        subtitle="Find inner peace, anywhere, anytime"
+        text="Serene Mind is an online platform that provides guided meditation and mindfulness practices to help individuals reduce stress, improve focus and increase well-being with a wide range of options for beginners and advanced practitioners, guided by certified teachers."
+        to="Why Serene"
+        label="Why Serene"
       />
       <Slides
-        name="section5"
-        title="Section 5"
-        subtitle="Subtitle of the slide"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        to="section6"
-        label="section6"
+        name="Why Serene"
+        title="Why Serene Mind? The Science Behind Our Success"
+        subtitle="Unlocking the power of mindfulness and meditation to reduce stress and improve well-being"
+        text="Serene Mind's clinical processes are based on evidence-based practices, such as mindfulness-based stress reduction (MBSR) and cognitive-behavioral therapy (CBT)."
+        to="Mindul Services"
+        label="Mindul Services"
       />
       <Slides
-        name="section6"
-        title="Section 6"
-        subtitle="Subtitle of the slide"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        to="section7"
-        label="section7"
+        name="Mindul Services"
+        title="What we offer at Serene Mind"
+        subtitle="Find inner peace and balance with our expert-led mindfulness and meditation services"
+        text="Serene Mind offers a wide range of mindfulness and meditation services to help you reduce stress, improve focus and increase well-being. Our services include guided meditation, mindfulness training, and mindfulness-based stress reduction (MBSR) programs."
+        to="Sign up"
+        label="Sign Up"
       />
       <Slides
-        name="section7"
-        title="Section 7"
-        subtitle="Subtitle of the slide"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        name="Sign up"
+        title="Sign Up Now"
+        subtitle="Start your journey to inner peace and balance with our expert-led mindfulness and meditation services"
+        text="We're excited for you to join our community and start your journey to inner peace and balance. Sign up now and experience the benefits of reduced stress and improved well-being."
         to="section1"
         label="section1"
       />

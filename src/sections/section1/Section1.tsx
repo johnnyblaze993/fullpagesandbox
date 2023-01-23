@@ -13,12 +13,12 @@ const Section1 = () => {
         <Quotes />
         <h3>Know no limits</h3>
         <Link
-          to="section2"
+          to="Mindfull Meditation"
           smooth={true}
           duration={500}
           className={styles.link}
         >
-          <Chippy label="section2" />
+          <Chippy label="Mindfull Meditation" />
         </Link>
       </Element>
     </>
