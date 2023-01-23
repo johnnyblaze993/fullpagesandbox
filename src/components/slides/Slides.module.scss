@@ -3,12 +3,19 @@
 .container {
     @include fluid-type(1.5rem, 2.5rem, $breakpoint-small, $breakpoint-large);
     @include flex-column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 
-    padding: $spacing-small;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: $contrast-A;
+
+
+
+
+
+    padding: $spacing-large;
     flex-wrap: wrap;
-    gap: $spacing-small;
+    gap: $spacing-large;
 
 }

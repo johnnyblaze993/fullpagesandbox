@@ -19,28 +19,36 @@ const App = () => {
       <Section2 />
       <Section3 />
       <Slides
+        name="section4"
         title="Section 4"
         subtitle="Subtitle of the slide"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        button={<Chippy label="Button" />}
+        to="section5"
+        label="section5"
       />
       <Slides
+        name="section5"
         title="Section 5"
         subtitle="Subtitle of the slide"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        button={<Chippy label="Button" />}
+        to="section6"
+        label="section6"
       />
       <Slides
+        name="section6"
         title="Section 6"
         subtitle="Subtitle of the slide"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        button={<Chippy label="Button" />}
+        to="section7"
+        label="section7"
       />
       <Slides
+        name="section7"
         title="Section 7"
         subtitle="Subtitle of the slide"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        button={<Chippy label="Button" />}
+        to="section1"
+        label="section1"
       />
     </div>
   );

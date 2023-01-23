@@ -9,20 +9,17 @@ const Section2 = () => {
   return (
     <>
       <Element name="section2" className={styles.section2}>
-        <h1>Section 2</h1>
-        <div className={styles.chipContainer}>
-          <Link to="subsection1" smooth={true} duration={500}>
-            <Chippy label="Subsection 2.1" />
+        <Element name="Benefits" className={styles.subsection}>
+          <h2>Benefits of mindful meditation</h2>
+          <Link to="overwhemled" smooth={true} duration={500}>
+            <Chippy label="continue" />
           </Link>
-          <Link to="subsection2" smooth={true} duration={500}>
-            <Chippy label="Subsection 2.2" />
-          </Link>
-        </div>
-        <Element name="subsection1" className={styles.subsection}>
-          <h2>Subsection 2.1</h2>
         </Element>
-        <Element name="subsection2" className={styles.subsection}>
-          <h2>Subsection 2.2</h2>
+        <Element name="overwhemled" className={styles.subsection}>
+          <h2>overwhemled</h2>
+          <Link to="section3" smooth={true} duration={500}>
+            <Chippy label="continue" />
+          </Link>
         </Element>
       </Element>
     </>
