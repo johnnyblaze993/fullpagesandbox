@@ -23,4 +23,11 @@
     }
 
 
+
+    .button {
+        @include secondary-button;
+        @include fluid-type(1.5rem, 2.5rem, $breakpoint-small, $breakpoint-large);
+
+        ;
+    }
 }

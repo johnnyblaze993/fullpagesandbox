@@ -4,21 +4,17 @@ import { Link, Element } from "react-scroll";
 import Chippy from "../chips/Chippy";
 
 interface Props {
-  title: string;
-  subtitle?: string;
-  text: string;
+  children: React.ReactNode;
 
   name: string;
   to: string;
   label: string;
 }
 
-const Slide: React.FC<Props> = ({ title, subtitle, text, label, name, to }) => {
+const Slide: React.FC<Props> = ({ children, label, name, to }) => {
   return (
     <Element name={name} className={styles.container}>
-      <h1>{title}</h1>
-      {subtitle && <h2>{subtitle}</h2>}
-      <p>{text}</p>
+      {children}
 
       <Link to={to} smooth={true} duration={500} className={styles.link}>
         <Chippy label={label} />

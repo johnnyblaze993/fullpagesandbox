@@ -1,5 +1,6 @@
-import { Element, scroller } from "react-scroll";
+import { Element } from "react-scroll";
 import { Link } from "react-scroll";
+import Button from "../../components/button/Button";
 import Chippy from "../../components/chips/Chippy";
 
 import Quotes from "../../components/quotes/Quotes";
@@ -20,6 +21,7 @@ const Section1 = () => {
         >
           <Chippy label="Mindfull Meditation" />
         </Link>
+        <Button className={styles.button}>hey</Button>
       </Element>
     </>
   );

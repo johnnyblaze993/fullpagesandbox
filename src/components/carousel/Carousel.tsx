@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 interface Props {}
 
-interface State {}
-
 const Carousel: React.FC<Props> = () => {
   const [slides] = useState([
     {

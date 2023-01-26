@@ -102,7 +102,7 @@ $font-weight-bold: 700;
 //buttons
 @mixin primary-button {
     background-color: $color-1;
-    color: $text-color;
+    color: $contrast-A;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -116,7 +116,7 @@ $font-weight-bold: 700;
 
 @mixin secondary-button {
     background-color: $color-2;
-    color: $text-color;
+    color: $contrast-A;
     padding: 8px 16px;
     border-radius: 8px;
     border: none;
@@ -128,33 +128,7 @@ $font-weight-bold: 700;
     }
 }
 
-@mixin primary-button {
-    background-color: $color-1;
-    color: $text-color;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 600;
 
-    &:hover {
-        background-color: darken($color-1, 10%);
-        cursor: pointer;
-    }
-}
-
-@mixin secondary-button {
-    background-color: $color-2;
-    color: $text-color;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 500;
-
-    &:hover {
-        background-color: darken($color-2, 10%);
-        cursor: pointer;
-    }
-}
 
 @mixin tertiary-button {
     background-color: transparent;
@@ -166,7 +140,7 @@ $font-weight-bold: 700;
 
     &:hover {
         background-color: $color-3;
-        color: $text-color;
+        color: $contrast-A;
         cursor: pointer;
     }
 }
@@ -193,6 +167,84 @@ $font-weight-bold: 700;
                 line-height: $max-font-size * 2;
             }
         }
+    }
+}
+
+//raindown animation
+$rainbow: (
+    'blue': #A8D8EA,
+
+    'purple' : #AA96DA,
+    'pink': #FCBAD3,
+    'yello': #FFFFD2,
+
+);
+
+// Create a background mixin that generates the rainbow gradient
+@mixin rainbow-gradient {
+    background: linear-gradient(to right, map-values($rainbow));
+    background-size: 200% 200%;
+    animation: rainbow 20s ease infinite;
+}
+
+// Create the keyframe animation for the background
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+//mixin for main button
+
+
+@mixin primaryBut {
+    background-color: $color-1;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: darken($color-1, 10%);
+        cursor: pointer;
+    }
+}
+
+
+//mixin for secondary button
+
+@mixin secondaryBut {
+    background-color: $color-2;
+    color: $text-color;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+
+    &:hover {
+        background-color: darken($color-2, 10%);
+        cursor: pointer;
+    }
+}
+
+//mixin for tertiary button
+@mixin tertiaryBut {
+    background-color: transparent;
+    color: $color-3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 2px solid $color-3;
+    font-weight: 400;
+
+    &:hover {
+        background-color: $color-3;
+        color: $text-color;
+        cursor: pointer;
     }
 }
 
@@ -230,5 +282,13 @@ $font-weight-bold: 700;
     primary-button,
     secondary-button,
     tertiary-button,
-    fluid-type
+    fluid-type,
+    rainbow-gradient,
+    $rainbow,
+    primaryBut,
+    secondaryBut,
+    tertiaryBut,
+
+
+
 }
